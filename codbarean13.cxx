@@ -446,11 +446,9 @@ return Ssprite1;
 
 Sprite codbar::firstnumber(int val6, int val7)
 {
-<<<<<<< HEAD
+
 	Iimage2.loadFromFile("nombres10a9.png");
-=======
-	Iimage2.loadFromFile("/home/pi/Documents/picture/nombres10a9.png");
->>>>>>> 7edd88df95cda503272a1525051746f7ab98ef18
+
 	Ttexture2.loadFromImage(Iimage2);
     Ssprite2.setTexture(Ttexture2);
     Ssprite2.setPosition((157+(val7*35)), 470);
@@ -464,11 +462,9 @@ Sprite codbar::firstnumber(int val6, int val7)
 
 Sprite codbar::drawtextleft(int val6, int val7)
 {
-<<<<<<< HEAD
+
 	Iimage2.loadFromFile("nombres10a9.png");
-=======
-	Iimage2.loadFromFile("/home/pi/Documents/picture/nombres10a9.png");
->>>>>>> 7edd88df95cda503272a1525051746f7ab98ef18
+
 	Ttexture2.loadFromImage(Iimage2);
     Ssprite2.setTexture(Ttexture2);
     Ssprite2.setPosition((212+(val7*35)), 470);
@@ -481,11 +477,9 @@ Sprite codbar::drawtextleft(int val6, int val7)
 
 Sprite codbar::drawtextright(int val6, int val7)
 {
-<<<<<<< HEAD
+
 	Iimage2.loadFromFile("nombres10a9.png");
-=======
-	Iimage2.loadFromFile("/home/pi/Documents/picture/nombres10a9.png");
->>>>>>> 7edd88df95cda503272a1525051746f7ab98ef18
+
 	Ttexture2.loadFromImage(Iimage2);
     Ssprite2.setTexture(Ttexture2);
     Ssprite2.setPosition((227+(val7*35)+(43*sizex)), 470);
@@ -547,15 +541,11 @@ setchoice[5] = 0;
 
 Color col2 (54, 122, 78, 255);
 
-<<<<<<< HEAD
 RenderWindow window(VideoMode(Width, Heigth), "code EAN13");  //pour utilisation sur une TV  1080p
+
 Font font1;
 if (!font1.loadFromFile("DroidSans.ttf"))
-=======
-RenderWindow window(VideoMode(Width, Heigth), "save image");
-Font font1;
-if (!font1.loadFromFile("/home/pi/Documents/fonts/DroidSans.ttf"))
->>>>>>> 7edd88df95cda503272a1525051746f7ab98ef18
+
 {
 	window.close();
 	return 0x99;
@@ -573,11 +563,7 @@ string strenter;
 Text Tenter;
 Tenter.setFont(font1);
 Tenter.setCharacterSize(70);
-<<<<<<< HEAD
-Tenter.setPosition(150,200);
-=======
-Tenter.setPosition(180,150);
->>>>>>> 7edd88df95cda503272a1525051746f7ab98ef18
+Tenter.setPosition(150,195);
 Tenter.setColor(Color::White);
 Tenter.setString ("");
 
@@ -585,11 +571,7 @@ string strenter2;
 Text Tenter2;
 Tenter2.setFont(font1);
 Tenter2.setCharacterSize(70);
-<<<<<<< HEAD
 Tenter2.setPosition(150,70);
-=======
-Tenter2.setPosition(180,70);
->>>>>>> 7edd88df95cda503272a1525051746f7ab98ef18
 Tenter2.setColor(Color::White);
 Tenter2.setString ("");
 
@@ -607,11 +589,7 @@ Tmde.setFont(font1);
 Tmde.setCharacterSize(45);
 Tmde.setPosition(780,50);
 Tmde.setColor(Color::Blue);
-<<<<<<< HEAD
-Tmde.setString (L"Entrez un nom pour identifier\nplus facilement le code-barre : [a - z]\n\nEntrez les 12 premiers chiffres : [0 - 9]\n\nPour valider le choix des 12 premiers charactères \net calculer le code de controle : [tab] \n\nPour afficher le code-barre : [Rshift]\n\nPour enregistrer l'image : [up]");
-=======
 Tmde.setString (L"Entrez un nom pour identifier\nplus facilement le code-barre : a - z\n\nEntrez les 12 premiers chiffres : 0 - 9 \n\nPour valider le choix des 12 premiers charactères \net calculer le code de controle : tab \n\nPour afficher le code-barre : right shift\n\nPour enregistrer l'image : left arrow");
->>>>>>> 7edd88df95cda503272a1525051746f7ab98ef18
 
 string strmde2;
 Text Tmde2;
@@ -619,11 +597,9 @@ Tmde2.setFont(font1);
 Tmde2.setCharacterSize(45);
 Tmde2.setPosition(780,650);
 Tmde2.setColor(Color::Blue);
-<<<<<<< HEAD
+
 strmde2 = "choix du format de l'image : [left/right] now png";
-=======
-strmde2 = "choix du format de l'image : png";
->>>>>>> 7edd88df95cda503272a1525051746f7ab98ef18
+
 Tmde2.setString (strmde2);
 
 vector<int> code (13);
@@ -699,7 +675,6 @@ Rselectformat.setSize(Vector2f(100, 50));
 Rselectformat.setOutlineThickness(4);
 Rselectformat.setOutlineColor(Color::White);
 
-<<<<<<< HEAD
 RectangleShape Rselectnom;
 Rselectnom.setPosition(140, 70);
 Rselectnom.setFillColor(trsp);
@@ -713,8 +688,7 @@ Rselectcode.setFillColor(trsp);
 Rselectcode.setSize(Vector2f(600, 80));
 Rselectcode.setOutlineThickness(4);
 Rselectcode.setOutlineColor(Color::White);
-=======
->>>>>>> 7edd88df95cda503272a1525051746f7ab98ef18
+
     
 window.clear(bg);
 
@@ -796,15 +770,10 @@ codbar cb1;
 						 if (format < 0)
 						 format=0;
 						 rectdel1.setPosition(600, 640);
-<<<<<<< HEAD
 						 rectdel1.setSize(Vector2f(1200, 350));
 						 window.draw(rectdel1);
 						 strmde2 = L"choix du format de l'image : [left/right] now  " + formatfile[format];
-=======
-						 rectdel1.setSize(Vector2f(1000, 350));
-						 window.draw(rectdel1);
-						 strmde2 = L"choix du format de l'image : " + formatfile[format];
->>>>>>> 7edd88df95cda503272a1525051746f7ab98ef18
+
 						 Tmde2.setString (strmde2);
 						 Rselectformat.setPosition(xcoordbm[format], ycoordbm[format]);
 						 Rselectformat.setPosition(xcoordbm[format], ycoordbm[format]);
@@ -817,15 +786,9 @@ codbar cb1;
 						 if (format>2)
 						 format = 2;
 						 rectdel1.setPosition(600, 640);
-<<<<<<< HEAD
 						 rectdel1.setSize(Vector2f(1200, 350));
 						 window.draw(rectdel1);
 						 strmde2 = L"choix du format de l'image : [left/right] now " + formatfile[format];
-=======
-						 rectdel1.setSize(Vector2f(1000, 350));
-						 window.draw(rectdel1);
-						 strmde2 = L"choix du format de l'image : " + formatfile[format];
->>>>>>> 7edd88df95cda503272a1525051746f7ab98ef18
 						 Tmde2.setString (strmde2);
 						 Rselectformat.setPosition(xcoordbm[format], ycoordbm[format]);
 						 sleep(milliseconds(150));
@@ -1060,11 +1023,9 @@ codbar cb1;
 		    window.draw(pTtextboutonmenu[i]);
 	      }
 		window.draw(Rselectformat);
-<<<<<<< HEAD
 		window.draw(Rselectnom);
 		window.draw(Rselectcode);
-=======
->>>>>>> 7edd88df95cda503272a1525051746f7ab98ef18
+
 		window.draw(Tenter);
 		window.draw(Tenter2);
 		window.draw(Tmde);
