@@ -446,7 +446,7 @@ return Ssprite1;
 
 Sprite codbar::firstnumber(int val6, int val7)
 {
-	Iimage2.loadFromFile("/home/pi/Documents/picture/nombres10a9.png");
+	Iimage2.loadFromFile("nombres10a9.png");
 	Ttexture2.loadFromImage(Iimage2);
     Ssprite2.setTexture(Ttexture2);
     Ssprite2.setPosition((157+(val7*35)), 470);
@@ -460,7 +460,7 @@ Sprite codbar::firstnumber(int val6, int val7)
 
 Sprite codbar::drawtextleft(int val6, int val7)
 {
-	Iimage2.loadFromFile("/home/pi/Documents/picture/nombres10a9.png");
+	Iimage2.loadFromFile("nombres10a9.png");
 	Ttexture2.loadFromImage(Iimage2);
     Ssprite2.setTexture(Ttexture2);
     Ssprite2.setPosition((212+(val7*35)), 470);
@@ -473,7 +473,7 @@ Sprite codbar::drawtextleft(int val6, int val7)
 
 Sprite codbar::drawtextright(int val6, int val7)
 {
-	Iimage2.loadFromFile("/home/pi/Documents/picture/nombres10a9.png");
+	Iimage2.loadFromFile("nombres10a9.png");
 	Ttexture2.loadFromImage(Iimage2);
     Ssprite2.setTexture(Ttexture2);
     Ssprite2.setPosition((227+(val7*35)+(43*sizex)), 470);
@@ -535,9 +535,9 @@ setchoice[5] = 0;
 
 Color col2 (54, 122, 78, 255);
 
-RenderWindow window(VideoMode(Width, Heigth), "save image");  //pour utilisation sur une TV     1080p
+RenderWindow window(VideoMode(Width, Heigth), "code EAN13");  //pour utilisation sur une TV  1080p
 Font font1;
-if (!font1.loadFromFile("/home/pi/codeEAN/DroidSans.ttf"))
+if (!font1.loadFromFile("DroidSans.ttf"))
 {
 	window.close();
 	return 0x99;
